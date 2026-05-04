@@ -1,0 +1,6 @@
+simpele javascript library gebruiken om op afbeeldingen te kunnen klikken. Zoals image map https://medium.com/@muhamedsalihseyedibrahim/javascript-image-map-aa84add25dd3
+
+https://github.com/leaflet/Leaflet
+Leaflet is een interactieve map!! Je kunt ook coordinaten zetten dat gebruiker niet naar een ander gebied kan scrollen
+
+https://timeline.knightlab.com/
