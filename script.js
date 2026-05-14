@@ -75,6 +75,11 @@ const locations = [
     name: "City Centre Groningen",
     coords: [53.2194, 6.5665],
     description: "Historical city centre of Groningen."
+  },
+  {
+    name: "Experiment (Test)",
+    coords: [53.24069997846568, 6.532617126163456],
+    description: "Extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description "
   }
 ];
 

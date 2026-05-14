@@ -4,3 +4,7 @@ https://github.com/leaflet/Leaflet
 Leaflet is een interactieve map!! Je kunt ook coordinaten zetten dat gebruiker niet naar een ander gebied kan scrollen
 
 https://timeline.knightlab.com/
+
+Sheila:
+- Map Markers
+- Update Information Gathered (Text in Word File)
