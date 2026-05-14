@@ -8,3 +8,4 @@ https://timeline.knightlab.com/
 Sheila:
 - Map Markers
 - Update Information Gathered (Text in Word File)
+- Two Maps; Zernike Campus and Groningen broad (Minerva, Wiebenga, Minerva2, Prins Claus Conservatorium)
