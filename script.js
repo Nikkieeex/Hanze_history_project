@@ -1,5 +1,24 @@
 /* run python -m http.server 8000
 * http://localhost:8000 */
+
+/*
+
+To ADD a LOCATION to the MAP:
+  {
+    name: "NAME OF BUILDING",
+    coords: [X.X, X.X],
+    description: "TEST"
+    image: "./images/image.jpg"
+  },
+  {
+    name: "NAME OF BUILDING 2",
+    coords: [X.X, X.X],
+    description: "TEST 2"
+    image: "./images/image.jpg"
+  }, 
+  
+*/
+
 const timelineData = {
   title: {
     text: {
@@ -67,20 +86,70 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 const locations = [
   {
-    name: "Hanze University of Applied Sciences",
-    coords: [53.2406, 6.5331],
-    description: "Main Hanze campus area in Groningen."
+    name: "University of Groningen, Zernike Campus",
+    coords: [53.24358312083661, 6.534969702095709],
+    description: "Rijksuniversiteit Groningen, Zernike Campus",
+    image: "./images/fritszernike.jpg"
   },
   {
-    name: "City Centre Groningen",
-    coords: [53.2194, 6.5665],
-    description: "Historical city centre of Groningen."
+    name: "Hanzehogeschool Groningen (Hoofd ingang)",
+    coords: [53.240934861318856, 6.533400128892888],
+    description: "Hoofd ingang Hanzehogeschool Groningen",
+    image: ""
   },
   {
-    name: "Experiment (Test)",
-    coords: [53.24069997846568, 6.532617126163456],
-    description: "",
-    Image: "https://www.paperandtea.com/cdn/shop/articles/Apfel_7ebe153a-a4ac-473a-9217-658894dfc968.jpg?v=1765535477&width=1500"
+    name: "Van Doorenveste (ZP11)",
+    coords: [53.2409950927156, 6.533645891170895],
+    description: "ZP11 / Van Doorenveste.",
+    image: "./images/doorenveste.jpg"
+  },
+  {
+    name: "Van OlstBorg (ZP7)",
+    coords: [53.24030990487017, 6.531974591799187],
+    description: "ZP7 / Van OlstBorg",
+    image: "./images/vanolstborg.jpg"
+  },
+  {
+    name: "Marie KamphuisBorg (ZP23)",
+    coords: [53.24211126245972, 6.536600661106534],
+    description: "ZP23 / Marie KamphuisBorg",
+    image: "./images/mariekamphuis.jpg"
+  },
+  {
+    name: "Willem-Alexander Sports Center",
+    coords: [53.24146481154212, 6.53553203412747],
+    description: "Willem-Alexander Sports Center on the Zernike Campus",
+    image: "./images/willemalexandersportcentrum.jpg"
+  },
+  {
+    name: "BrugsmaBorg (ZP9)",
+    coords: [53.2400576467666, 6.532911822789884],
+    description: "ZP9 / BrugsmaBorg",
+    image: "./images/brugsma.jpg"
+  },
+  {
+    name: "Academie Minerva (Praediniussingel 59)",
+    coords: [53.21515791356994, 6.559803142251853],
+    description: "Academie Minerva (Praediniussingel 59)",
+    image: ""
+  },
+  {
+    name: "Academie Minerva (Gedempte Zuiderdiep 158)",
+    coords: [53.21480003005644, 6.561404797304823],
+    description: "Academie Minerva (Gedempte Zuiderdiep 158)",
+    image: "./images/minervagedemptezuiderdiep.jpg"
+  },
+  {
+    name: "Wiebenga",
+    coords: [53.22789627062452, 6.5675642671979935],
+    description: "Hanze University Groningen, Wiebenga",
+    image: ""
+  },
+  {
+    name: "Prins Claus Conservatorium",
+    coords: [53.21443004896757, 6.577585919906768],
+    description: "Prins Claus Conservatorium",
+    image: "./images/prinsclaus.jpg"
   }
 ];
 
@@ -90,5 +159,6 @@ locations.forEach(location => {
     .bindPopup(`
       <h3>${location.name}</h3>
       <p>${location.description}</p>
+      ${location.image ? `<img src="${location.image}" alt="${location.name}" style="width:150px; height:auto; border-radius:6px; margin-bottom:6px;">` : ''}
     `);
 });
