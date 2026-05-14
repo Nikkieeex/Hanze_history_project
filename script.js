@@ -79,7 +79,8 @@ const locations = [
   {
     name: "Experiment (Test)",
     coords: [53.24069997846568, 6.532617126163456],
-    description: "Extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description extremely long description "
+    description: "",
+    Image: "https://www.paperandtea.com/cdn/shop/articles/Apfel_7ebe153a-a4ac-473a-9217-658894dfc968.jpg?v=1765535477&width=1500"
   }
 ];
 
