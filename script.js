@@ -34,6 +34,15 @@ const timelineData = {
         headline: "Modern Hanze",
         text: "Hanze continues to develop as a university of applied sciences in Groningen."
       }
+    },
+    {
+      start_date: {
+        year: "2023"
+      },
+      text: {
+        headline: "A Year before Modern",
+        text: "Example Edit."
+      }
     }
   ]
 };
