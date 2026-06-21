@@ -52,11 +52,28 @@ h2 {
 }
 
 #map {
-  width: 100%;
+  width: 50%;
   height: 500px;
   border-radius: 12px;
 }
 
 .leaflet-popup-content h3 {
   margin: 0 0 8px;
+}
+
+#map_and_paragraph {
+  display: flex;
+}
+
+#paragraph_content {
+  margin-left: 50px;
+  width: 50%;
+}
+
+.source {
+  font-size: small;
+}
+
+p {
+  font-size:medium
 }
