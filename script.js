@@ -103,13 +103,18 @@ const locations = [
     sourceimage_two: "“M.T.S. ‘Academie Minerva’ En Zeevaartschool, Groningen, Luchtfoto.” 2026. Beeldbank Groningen. 2026. https://www.beeldbankgroningen.nl/beelden/detail/b9242965-1fa0-8454-e19e-cc70be2934ec/media/5eceba86-79d6-90d5-2a75-a01c3e32e491?mode=detail&view=horizontal&q=zeevaartschool%20groningen&rows=1&page=4",
     paragraph_three: "Het schoolgebouw van de scheepvaartschool en MTS (Middelbare Technische School), wat lag aan de Petrus Driessenstraat 3, speelde een belangrijke rol in de tweede wereldoorlog. Dit schoolgebouw ving leerlingen van andere scholen op en werd gebruikt door het verzet. Onderduikers werden opgevangen in de kelders van de school en door docenten en studenten werden er illegale kranten verspreid en persoonsbewijzen geregeld. /n Beide directieleden van de zeevaartschool en het MTS waren ook verzetsstrijders; Waaronder de directeur P.H.E. van Dooren. P.H.E. van Dooren heeft geleefd van 1899 tot 1944 en is doodgeschoten door 'foute' politieman Stienus Bertus van Wijnen tijdens de tweede wereldoorlog (“Dooren, Van, Pieter Hermannus Everhardus - TracesOfWar.nl” 2026). /n Later in 2004 toen de school inmiddels 13 lectoraten had gekregen volgde er de mogelijkvoor om samen een school binnen de Hanze op te richten. Hierbij kwam ook het Instituur of Life Science & Technology (ILST) op.  In 2008 werd het gebouw van de faculteit Techniek vernoemd naar P.H.E. van Dooren (1899-1944), de oud-directeur van de scheepvaartschool en het MTS (Middelbare Technische School) en verzetslid tijdens de tweede wereldoorlog (1940-1945)."
   },
-  /* {
+  {
     name: "Van OlstBorg (ZP7)",
     coords: [53.24030990487017, 6.531974591799187],
-    description: "ZP7 / Van OlstBorg",
-    image: "./images/vanolstborg.jpg"
+    paragraph_one: "De Van OlstBorg (Van OlstToren) (HanzeHogeschool Groningen 2026) op het Zernike Campus (Zernikeplein 7) is vernoemd naar Gerrit van Olst (1734-1807).",
+    image_one: "./images/Hanze_University_Groningen_Towerolstborg.jpg",
+    sourceimage_one: "“File:Hanze University Groningen Tower.jpg - Wikimedia Commons.” 2022. Wikimedia.org. 2022. https://commons.wikimedia.org/wiki/File:Hanze_University_Groningen_Tower.jpg ",
+    paragraph_two: "Gerrit van Olst was één van de oprichters van de eerste rechtsvoorgangen van de huidige HanzeHogeschool. Van Olst was lid van de Groninger department van het nut (“Marjan Brouwers: Van Meester Tot Master | Groninger Boeken” 2018) en maakte zich sterk voor de oprichting van de Akademie van Teeken-, Bouw- en Zeevaartkunde (9 November, 1797) (Concept7, Groningen Nederland 2026). Op 15 October 1798 volgde de openingsles van de afdeling Bouw- en Zeevaartkunde (“Gevonden in Delpher - Nieuwsblad van Het Noorden” 2026). Vanwege het feit dat veel mensen bereid waren om jaarlijks ‘ene somma van vijf gulden en vijf stuivers’ bij te dragen werd de academia voor ‘schone en nuttige kunsten’ op 1 februari in 1798 een feit. Later (vanaf 1831) werd de onderwijsinstelling ‘Academie Minerva’ genoemd, doordat de kweekschool dertig jaar later van ’t Nut over is gegaan naar het Rijk kreeg de instelling een andere naam. In 1986 zijn beide instellingen opgegaan in de nieuw gevormde Rijkshogeschool Groningen. En door een fusie met de, eveneens in de jaren tachtig ontstane, Hanzehogeschool, varen de twee sinds 1993 onder die vlag.",    
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
-  {
+  /* {
     name: "Marie KamphuisBorg (ZP23)",
     coords: [53.24211126245972, 6.536600661106534],
     description: "ZP23 / Marie KamphuisBorg",
@@ -165,8 +170,8 @@ locations.forEach(location => {
     .addTo(map)
     .bindPopup(`
       <h3>${location.name}</h3>
-      <p>${location.description}</p>
-      ${location.image ? `<img src="${location.image}" alt="${location.name}" style="width:150px; height:auto; border-radius:6px; margin-bottom:6px;">` : ''}
+      <p>${location.paragraph_one}</p>
+      ${location.image_one ? `<img src="${location.image_one}" alt="${location.name}" style="width:150px; height:auto; border-radius:6px; margin-bottom:6px;">` : ''}
     `)
     .addEventListener('click', () => {
       textboxone.textContent = location.paragraph_one
