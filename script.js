@@ -158,6 +158,11 @@ const locations = [
   } */
 ];
 
+/* NIEUW: verberg de info-box (de container rond de paragraaf-elementen)
+   zodra de pagina laadt, dus voordat er op een locatie is geklikt. */
+const infobox = document.getElementById("paragraph_text_one").parentElement;
+infobox.style.display = "none";
+
 locations.forEach(location => {
   const textboxone = document.getElementById("paragraph_text_one")
   const textboxtwo = document.getElementById("paragraph_text_two")
@@ -182,6 +187,8 @@ locations.forEach(location => {
       imagetwo.src = location.image_two
       sourceimagetwo.textContent = location.sourceimage_two
 
+      /* NIEUW: laat de info-box weer zien zodra er op een locatie is geklikt */
+      infobox.style.display = "block"
     });
 });
 
