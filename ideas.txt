@@ -6,7 +6,9 @@ Leaflet is een interactieve map!! Je kunt ook coordinaten zetten dat gebruiker n
 https://timeline.knightlab.com/
 
 Sheila:
-- Re-write text for remaining buildings (Van OlstBorg on out)
+- Re-write text for remaining buildings (Marie Kamphuis, ect.)
 - Add it to the map (markers, properties)
 - Test all markers
-- Organise/format
+- Organise/format (to make it look better)
+- Name the images in the /images folder properly/neatly
+- Clean up code (+ add comments)
