@@ -114,48 +114,83 @@ const locations = [
     sourceimage_two: "",
     paragraph_three: ""
   },
-  /* {
+  {
     name: "Marie KamphuisBorg (ZP23)",
     coords: [53.24211126245972, 6.536600661106534],
-    description: "ZP23 / Marie KamphuisBorg",
-    image: "./images/mariekamphuis.jpg"
+    paragraph_one: "ZP23 / Marie KamphuisBorg",
+    image_one: "./images/mariekamphuis.jpg",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "Willem-Alexander Sports Center",
     coords: [53.24146481154212, 6.53553203412747],
-    description: "Willem-Alexander Sports Center on the Zernike Campus",
-    image: "./images/willemalexandersportcentrum.jpg"
+    paragraph_one: "Willem-Alexander Sports Center on the Zernike Campus",
+    image_one: "./images/willemalexandersportcentrum.jpg",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "BrugsmaBorg (ZP9)",
     coords: [53.2400576467666, 6.532911822789884],
-    description: "ZP9 / BrugsmaBorg",
-    image: "./images/brugsma.jpg"
+    paragraph_one: "ZP9 / BrugsmaBorg",
+    image_one: "./images/brugsma.jpg",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "Academie Minerva (Praediniussingel 59)",
     coords: [53.21515791356994, 6.559803142251853],
-    description: "Academie Minerva (Praediniussingel 59)",
-    image: ""
+    paragraph_one: "Academie Minerva (Praediniussingel 59)",
+    image_one: "",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "Academie Minerva (Gedempte Zuiderdiep 158)",
     coords: [53.21480003005644, 6.561404797304823],
-    description: "Academie Minerva (Gedempte Zuiderdiep 158)",
-    image: "./images/minervagedemptezuiderdiep.jpg"
+    paragraph_one: "Academie Minerva (Gedempte Zuiderdiep 158)",
+    image_one: "./images/minervagedemptezuiderdiep.jpg",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "Wiebenga",
     coords: [53.22789627062452, 6.5675642671979935],
-    description: "Hanze University Groningen, Wiebenga",
-    image: ""
+    paragraph_one: "Hanze University Groningen, Wiebenga",
+    image_one: "",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
   },
   {
     name: "Prins Claus Conservatorium",
     coords: [53.21443004896757, 6.577585919906768],
-    description: "Prins Claus Conservatorium",
-    image: "./images/prinsclaus.jpg"
-  } */
+    paragraph_one: "Prins Claus Conservatorium",
+    image_one: "./images/prinsclaus.jpg",
+    sourceimage_one: "",
+    paragraph_two: "",
+    image_two: "",
+    sourceimage_two: "",
+    paragraph_three: ""
+  }
 ];
 
 locations.forEach(location => {
