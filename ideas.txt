@@ -12,3 +12,8 @@ Sheila:
 - Organise/format (to make it look better)
 - Name the images in the /images folder properly/neatly
 - Clean up code (+ add comments)
+- Zoom into the map closer so the markers are better spread out/separated
+
+IDEA:
+- Make the map size adjust to the 'paragraph' size 
+(the text on the right, so that there won't be as much white-space)
