@@ -32,7 +32,7 @@ const timelineData = {
   title: {
     text: {
       headline: "Hanze History",
-      text: "Een tijdlijn van belangrijke momenten in de geschiedenis van de Hanze, van de eerste tekenacademie in 1798 tot de Hanze van nu."
+      text: "Belangrijke momenten in de geschiedenis van de Hanze, van de eerste tekenacademie in 1798 tot de Hanze van nu."
     }
   },
   events: [
@@ -68,7 +68,7 @@ const timelineData = {
       start_date: { year: "1797" },
       text: {
         headline: "Plan voor een academisch ziekenhuis",
-        text: "Hoogleraar Evert Jan Thomassen à Thuessink stelt voor om het Groene Weeshuis aan de Oude Ebbingestraat om te bouwen tot een academisch ziekenhuis (nosocomium academicum) voor klinisch onderwijs."
+        text: "Hoogleraar Evert Jan Thomassen à Thuessink stelt voor om het Groene Weeshuis aan de Oude Ebbingestraat om te bouwen tot een academisch ziekenhuis (Nosocomium Academicum) voor klinisch onderwijs."
       }
     },
     {
@@ -538,7 +538,7 @@ const locations = [
     paragraph_one: "De Van OlstBorg (Van OlstToren) (HanzeHogeschool Groningen 2026) op het Zernike Campus (Zernikeplein 7) is vernoemd naar Gerrit van Olst (1734-1807).",
     image_one: "./images/Hanze_University_Groningen_Towerolstborg.jpg",
     sourceimage_one: "“File:Hanze University Groningen Tower.jpg - Wikimedia Commons.” 2022. Wikimedia.org. 2022. https://commons.wikimedia.org/wiki/File:Hanze_University_Groningen_Tower.jpg ",
-    paragraph_two: "Gerrit van Olst was één van de oprichters van de eerste rechtsvoorganger van de huidige HanzeHogeschool. Van Olst was lid van de Groninger department van het nut (“Marjan Brouwers: Van Meester Tot Master | Groninger Boeken” 2018) en maakte zich sterk voor de oprichting van de Akademie van Teeken-, Bouw- en Zeevaartkunde (9 November, 1797) (Concept7, Groningen Nederland 2026). Op 15 October 1798 volgde de openingsles van de afdeling Bouw- en Zeevaartkunde (“Gevonden in Delpher - Nieuwsblad van Het Noorden” 2026). Vanwege het feit dat veel mensen bereid waren om jaarlijks ‘ene somma van vijf gulden en vijf stuivers’ bij te dragen werd de academie voor ‘schone en nuttige kunsten’ op 1 februari in 1798 een feit. Later (vanaf 1831) werd de onderwijsinstelling ‘Academie Minerva’ genoemd, doordat de kweekschool dertig jaar later van ’t Nut over is gegaan naar het Rijk kreeg de instelling een andere naam. In 1986 zijn beide instellingen opgegaan in de nieuw gevormde Rijkshogeschool Groningen. En door een fusie met de, eveneens in de jaren tachtig ontstane, Hanzehogeschool, varen de twee sinds 1993 onder die vlag (Concept7, Groningen Nederland 2026).",
+    paragraph_two: "Gerrit van Olst was één van de oprichters van de eerste rechtsvoorganger van de huidige HanzeHogeschool. Van Olst was lid van de Groninger department van het nut (“Marjan Brouwers: Van Meester Tot Master | Groninger Boeken” 2018) en maakte zich sterk voor de oprichting van de Akademie van Teeken-, Bouw- en Zeevaartkunde (9 November, 1797) (Concept7, Groningen Nederland 2026). Op 15 October 1798 volgde de openingsles van de afdeling Bouw- en Zeevaartkunde (“Gevonden in Delpher - Nieuwsblad van Het Noorden” 2026). Vanwege het feit dat veel mensen bereid waren om jaarlijks ‘ene somma van vijf gulden en vijf stuivers’ bij te dragen werd de academie voor ‘schone en nuttige kunsten’ op 1 februari in 1798 een feit. Later (vanaf 1831) werd de onderwijsinstelling ‘Academie Minerva’ genoemd, doordat de kweekschool dertig jaar later van ’t Nut over is gegaan naar het Rijk kreeg de instelling een andere naam. In 1986 zijn beide instellingen opgegaan in de nieuw gevormde Rijkshogeschool Groningen. En door een fusie met de, eveneens in de jaren tachtig ontstane, Hanzehogeschool, varen de twee sinds 1993 onder die vlag verder (Concept7, Groningen Nederland 2026).",
     image_two: "",
     sourceimage_two: "",
     paragraph_three: ""
