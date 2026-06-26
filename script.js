@@ -505,7 +505,7 @@ const groningenBounds = [
 const map = L.map("map", {
   maxBounds: groningenBounds,
   maxBoundsViscosity: 1.0,
-  minZoom: 13,
+  minZoom: 12,
   maxZoom: 18
 }).setView([53.226326, 6.558985], 13);
 
