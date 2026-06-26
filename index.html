@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +11,237 @@
 </head>
 
 <body>
-  <header>
-    <h1>Hanze History</h1>
-    <p>Explore the history of Hanze University of Applied Sciences through an interactive timeline and map.</p>
-  </header>
 
-  <main>
-    <section class="intro">
-      <h2>About this page</h2>
-      <p>This page presents key moments and locations in the development of Hanze University of Applied Sciences.</p>
-    </section>
+  <!-- Sticky/fixed sidebar navigatie: staat los van de page-flow vast links -->
+  <aside class="sidebar">
+    <span class="sidebar-title">Navigatie</span>
+    <nav id="side-nav">
+      <a href="#inleiding" class="nav-link"><span class="dot"></span>Inleiding</a>
+      <a href="#timeline" class="nav-link"><span class="dot"></span>Tijdlijn</a>
+      <a href="#kaart" class="nav-link"><span class="dot"></span>Kaart van Groningen</a>
+      <a href="#lifescience" class="nav-link"><span class="dot"></span>Life Science</a>
+      <a href="#wistjedat" class="nav-link"><span class="dot"></span>Wist je dat...?</a>
+    </nav>
+    <span class="sidebar-footer">Hanze History · concept</span>
+  </aside>
 
-    <section>
-      <h2>Timeline</h2>
-      <div id="timeline-embed"></div>
-    </section>
+  <div class="page-content">
 
-    <section>
-      <h2>Map of Groningen</h2>
-      <div id="map_and_paragraph">
-        <div id="map"></div>
-        
-        <div id="paragraph_content">
-          <p id="paragraph_text_one">Have you ever wondered where the different buildings on the Zernike Campus got their name from?</p>
-          <img src="" width="30px" id="image_uno">
-          <p id="sourceone" class="source">Worked out so far: Van Doorenveste and Van OlstBorg</p>
-          <p id="paragraph_text_two">Click on any of the markers on the map to view information about the building (placeholder text)</p>
-          <img src="" width="30%" id="image_dos">
-          <p id="sourcetwo" class="source">Note: The rest of the markers are currently placeholders and will be updated accordingly before the 1st of July.</p>
-          <p id="paragraph_text_three"></p>
-        </div>
-      
+    <!-- Oranje topbalk met logo. Let op: dit is geen officiële Hanze-CSS,
+         pagina is nog niet goedgekeurd. -->
+    <div class="topbar">
+      <img src="/images/hanzelogo.png" alt="Hanze logo" class="logo">
+      <span class="topbar-label">Honours Project · Historische Hanze</span>
+      <span class="draft-tag">Concept, nog niet goedgekeurd</span>
+    </div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">Geschiedenis van de Hanze</span>
+        <h1>Hanze History</h1>
+        <p class="tagline">Ontdek de geschiedenis van de Hanze via een interactieve tijdlijn en kaart van de gebouwen in Groningen.</p>
       </div>
-    </section>
-  </main>
+    </header>
+
+    <main>
+
+      <!-- INLEIDING -->
+      <section id="inleiding">
+        <div class="section-head">
+          <h2>Inleiding</h2>
+        </div>
+        <div class="card intro">
+          <p>De Hanze is de oudste en grootste hogeschool in het noorden van Nederland.</p>
+          <p>Het Zernike Campus is vernoemd naar wetenschapper Frits Zernike (1888&ndash;1966), die in 1953 de Nobelprijs voor Natuurkunde ontving (Wikipedia-bijdragers, 2026).</p>
+          <p>Op deze pagina lees je hoe de Hanze door de eeuwen heen is ontstaan: van de eerste tekenles in 1798 tot de hogeschool van vandaag. Via de tijdlijn en de kaart hieronder kun je zelf door die geschiedenis bladeren.</p>
+        </div>
+      </section>
+
+      <!-- TIJDLIJN -->
+      <section id="timeline">
+        <div class="section-head">
+          <h2>Tijdlijn</h2>
+          <span class="section-sub">1768 &ndash; 2026</span>
+        </div>
+        <div id="timeline-embed"></div>
+      </section>
+
+      <!-- KAART -->
+      <section id="kaart">
+        <div class="section-head">
+          <h2>Kaart van Groningen</h2>
+          <span class="section-sub">Klik op een pin voor meer informatie</span>
+        </div>
+        <div id="map_and_paragraph">
+          <div id="map-wrap">
+            <div id="map"></div>
+            <p class="map-hint"><span class="dot-orange"></span>Klik op een locatie op de kaart om de informatie hiernaast te laden.</p>
+          </div>
+
+          <div id="paragraph_content" class="placeholder">
+            <p id="placeholder_text">Selecteer een locatie op de kaart om er meer over te lezen.</p>
+            <span class="panel-kicker" id="panel_kicker" style="display:none;">Locatie</span>
+            <p id="paragraph_text_one"></p>
+            <img src="" width="100%" id="image_uno">
+            <p id="sourceone" class="source"></p>
+            <p id="paragraph_text_two"></p>
+            <img src="" width="100%" id="image_dos">
+            <p id="sourcetwo" class="source"></p>
+            <p id="paragraph_text_three"></p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LIFE SCIENCE -->
+      <section id="lifescience">
+        <div class="life-science">
+          <div class="ls-text">
+            <span class="eyebrow-light">Instituut of Life Science &amp; Technology</span>
+            <h2>Life Science op de Hanze</h2>
+            <p>In 2004 ontstond, naast de groei van de Hanze naar 13 lectoraten, de mogelijkheid voor opleidingen om samen een eigen school binnen de Hanze te vormen. Hieruit kwam het Instituut of Life Science &amp; Technology (ILST) voort, dat onder meer Zernike Advanced Processing mogelijk heeft gemaakt. In 2026 is dit instituut opgenomen in de nieuwe cluster Engineering, Life Sciences &amp; ICT.</p>
+          </div>
+          <div class="ls-badge">
+            <span class="ls-year">2004</span>
+            <span class="ls-year-label">Ontstaan van ILST</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- WIST JE DAT -->
+      <section id="wistjedat">
+        <div class="section-head">
+          <h2>Wist je dat...?</h2>
+          <span class="section-sub">Klik op een kaart om het antwoord te zien</span>
+        </div>
+
+        <div class="fact-grid">
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat de allereerste les van de Hanzehogeschool gegeven werd door een Vlaamse kunstschilder?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Op 17 januari 1798 gaf Gerardus de San de allereerste les, in een oud pand aan de Oude Kijk in 't Jatstraat. Dat moment markeert officieel het begin van de instelling.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat de Academie in 1798 werd gefinancierd door 350 gewone burgers?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Elke contribuant betaalde jaarlijks 5 gulden en 5 stuivers om de Academie van Teeken-, Bouw- en Zeevaartkunde op te richten. Burgers van "Het Nut" speelden hierin een grote rol.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat meisjes in de vroege jaren alleen tekenles mochten volgen?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Bouw- en zeevaartkunde waren alleen voor jongens. Eén van de eerste vrouwelijke leerlingen, Clara Bruins, won later toch vier medailles met haar examenwerk.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat de eerste kweekschool van Groningen na 15 jaar alweer dichtging?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>De kweekschool startte in 1797, maar werd in 1812 gesloten door bezuinigingen. Daardoor wordt hij niet gezien als directe voorloper van de Hanze.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat Berend Brugsma op zijn 17e al hoofd was van een school?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Brugsma kreeg de bijnaam "de Nederlandse Pestalozzi" vanwege zijn vernieuwende, aanschouwelijke onderwijs. Het huidige Pedagogische Academiegebouw draagt zijn naam: BrugsmaBorg.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat Van Doorenveste (ZP11) vernoemd is naar een verzetsheld?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Directeur Pieter van Dooren (MTS/Academie Minerva) werd in de Tweede Wereldoorlog doodgeschoten. Het gebouw was een verzetsbolwerk, met onderduikers in de kelder.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je naar wie de toren op Zernike, de Van OlstBorg, is vernoemd?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Naar Gerrit van Olst (1734-1807), een handelaar die zich sterk maakte voor de oprichting van de allereerste academie.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat Marie KamphuisBorg vernoemd is naar een pionier in het maatschappelijk werk?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Marie Kamphuis zette tijdens de Tweede Wereldoorlog in het geheim een opleiding op in Groningen en werd later directrice van de Academie voor Sociale en Culturele Arbeid.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je dat de MTS en zeevaartschool een rol speelden in het verzet?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>Terwijl scholen elders gesloten of gevorderd waren, werden hier illegale kranten en persoonsbewijzen verspreid, en zaten er onderduikers in de kelder.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="fact-card" type="button">
+            <div class="fact-card-inner">
+              <div class="fact-face fact-front">
+                <span class="fact-icon"></span>
+                <p>Wist je hoe de naam "Hanze" precies is ontstaan?</p>
+              </div>
+              <div class="fact-face fact-back">
+                <p>In 1993 fuseerden de Rijkshogeschool Groningen en de Hanzehogeschool. In 1994 kreeg de nieuwe instelling ook een nieuw logo.</p>
+              </div>
+            </div>
+          </button>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
 
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
