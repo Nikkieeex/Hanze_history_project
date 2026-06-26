@@ -520,6 +520,33 @@ p { font-size: 15.5px; }
 }
 
 /* --------------------------------------------------------------------
+   Referenties — gebruikte bronnen in het project
+   -------------------------------------------------------------------- */
+
+#referentie {
+  text-align: left;
+  color: var(--hanze-orange-dark);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.referentiesectionheader {
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px
+}
+
+.referentieheader {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px
+}
+
+/* --------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------- */
 @media (max-width: 900px) {

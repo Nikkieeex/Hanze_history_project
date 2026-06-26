@@ -10,6 +10,7 @@ Sheila: to-do/IDEAS
 - Part about Frits Zernike
 - References (toggle)
     Add a toggle-able reference list (chicago author-date)
+    Add a navigation element to the nav-bar for the 'references' section
 - Add paragraph breaks (/more paragraph elements) 
     to the 'text box' next to the map, to split the large amount of text per paragraph 
     into multiple 'smaller paragraphs' 
