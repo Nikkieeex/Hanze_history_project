@@ -5,10 +5,13 @@ Leaflet is een interactieve map!! Je kunt ook coordinaten zetten dat gebruiker n
 
 https://timeline.knightlab.com/
 
-Sheila:
-- Re-write text for remaining buildings (Marie Kamphuis, ect.)
-- Add it to the map (markers, properties)
-- Test all markers
-- Organise/format (to make it look better)
-- Name the images in the /images folder properly/neatly
+Sheila: to-do/IDEAS
 - Clean up code (+ add comments)
+- Part about Frits Zernike
+- References (toggle)
+    Add a toggle-able reference list (chicago author-date)
+- Add paragraph breaks (/more paragraph elements) 
+    to the 'text box' next to the map, to split the large amount of text per paragraph 
+    into multiple 'smaller paragraphs' 
+    (example: Van Doorenveste 'text box next to the map' 
+    when clicked on the map).

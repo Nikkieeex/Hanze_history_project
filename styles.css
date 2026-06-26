@@ -294,6 +294,10 @@ section .section-sub {
   margin-right: 6px;
 }
 
+#popup-header {
+  color: var(--hanze-orange-dark)
+}
+
 /* Dashboard-style info panel next to the map */
 #paragraph_content {
   flex: 1 1 45%;
