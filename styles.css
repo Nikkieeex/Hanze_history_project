@@ -1,79 +1,543 @@
+/* ==========================================================================
+   Hanze History — styles.css
+   Let op: dit is een niet-officiële, nog niet goedgekeurde projectpagina.
+   Er wordt GEEN officiële Hanze-huisstijl/CSS gebruikt, dit is een eigen stijl
+   die wel het Hanze-oranje en logo gebruikt.
+   ========================================================================== */
+
+:root {
+  --hanze-orange: #EC6608;
+  --hanze-orange-dark: #C4530B;
+  --hanze-orange-light: #FDEEE2;
+  --ink: #1F2328;
+  --ink-soft: #5B6168;
+  --paper: #FAFAF8;
+  --card: #FFFFFF;
+  --line: #E7E3DC;
+  --sidebar-bg: #1F2328;
+  --sidebar-text: #D8DADC;
+  --sidebar-text-active: #FFFFFF;
+  --radius: 14px;
+  --shadow-soft: 0 4px 16px rgba(31, 35, 40, 0.06);
+  --shadow-pop: 0 18px 50px rgba(31, 35, 40, 0.22);
+}
+
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #222;
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  line-height: 1.55;
 }
 
-header {
-  background-color: #5678;
+h1, h2, h3 {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--hanze-orange-dark); }
+
+/* --------------------------------------------------------------------
+   Topbar: oranje balk met logo
+   -------------------------------------------------------------------- */
+.topbar {
+  background-color: var(--hanze-orange);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 24px;
+}
+
+.topbar img.logo {
+  height: 36px;
+  width: auto;
+  display: block;
+  /* Tip: vervang /images/hanzelogo.png door een transparante versie
+     zodra je die hebt; de witte achtergrond is dan niet meer nodig. */
+}
+
+.topbar .topbar-label {
   color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.95;
 }
 
-header h1 {
+.topbar .draft-tag {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+}
+
+/* --------------------------------------------------------------------
+   Header: lichte/witte hero
+   -------------------------------------------------------------------- */
+header.hero {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--paper) 100%);
+  border-bottom: 1px solid var(--line);
+  padding: 56px 32px 44px;
+  text-align: left;
+}
+
+header.hero .hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header.hero .eyebrow {
+  display: inline-block;
+  color: var(--hanze-orange-dark);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+header.hero h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 44px;
+  color: var(--ink);
 }
 
-header p {
+header.hero p.tagline {
   font-size: 18px;
-  margin-top: 10px;
+  color: var(--ink-soft);
+  margin-top: 12px;
+  max-width: 640px;
+}
+
+/* --------------------------------------------------------------------
+   Page shell: sidebar (vast, volledig links, vanaf de bovenkant) + content
+   -------------------------------------------------------------------- */
+.sidebar {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--sidebar-bg);
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.page-content {
+  margin-left: 220px;
+  min-width: 0;
+}
+
+.sidebar .sidebar-title {
+  color: var(--sidebar-text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 24px;
+  margin-bottom: 18px;
+  opacity: 0.6;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar nav a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 11px 24px;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.sidebar nav a .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--sidebar-text-active);
+}
+
+.sidebar nav a.active {
+  background: rgba(236, 102, 8, 0.15);
+  color: #fff;
+  border-left-color: var(--hanze-orange);
+  font-weight: 600;
+}
+
+.sidebar .sidebar-footer {
+  margin-top: auto;
+  padding: 16px 24px 4px;
+  font-size: 12px;
+  color: var(--sidebar-text);
+  opacity: 0.45;
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 40px 36px 80px;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 56px;
+  scroll-margin-top: 20px;
+}
+
+section .section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 26px;
+  margin: 0;
+  color: var(--ink);
+}
+
+section .section-sub {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+/* --------------------------------------------------------------------
+   Cards
+   -------------------------------------------------------------------- */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
 }
 
 .intro {
-  background-color: white;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 26px 28px;
 }
 
+.intro p { margin: 0 0 10px; }
+.intro p:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------
+   Timeline
+   -------------------------------------------------------------------- */
 #timeline-embed {
   width: 100%;
-  height: 600px;
-  background-color: white;
-  border-radius: 12px;
+  height: 640px;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
 }
 
-#map {
-  width: 50%;
-  height: 500px;
-  border-radius: 12px;
-}
-
-.leaflet-popup-content h3 {
-  margin: 0 0 8px;
-}
-
+/* --------------------------------------------------------------------
+   Map + dashboard panel
+   -------------------------------------------------------------------- */
 #map_and_paragraph {
   display: flex;
+  gap: 24px;
+  align-items: flex-start;
 }
 
+#map-wrap {
+  flex: 1 1 55%;
+  min-width: 0;
+}
+
+#map {
+  width: 100%;
+  height: 560px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
+
+.map-hint {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.map-hint .dot-orange {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hanze-orange);
+  margin-right: 6px;
+}
+
+/* Dashboard-style info panel next to the map */
 #paragraph_content {
-  margin-left: 50px;
-  width: 50%;
+  flex: 1 1 45%;
+  min-width: 0;
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 26px;
+  position: relative;
+  max-height: 560px;
+  overflow-y: auto;
+}
+
+#paragraph_content.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 14px;
+  min-height: 240px;
+}
+
+#paragraph_content .panel-title {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+#paragraph_content .panel-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hanze-orange-dark);
+  margin-bottom: 14px;
+  display: block;
 }
 
 .source {
-  font-size: small;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
 }
 
-p {
-  font-size:medium
+#paragraph_content img {
+  border-radius: 10px;
+  margin: 6px 0 4px;
+  display: block;
+  max-width: 100%;
+}
+
+p { font-size: 15.5px; }
+
+/* --------------------------------------------------------------------
+   Leaflet popup styling tweaks (kept generic / not official Hanze CSS)
+   -------------------------------------------------------------------- */
+.leaflet-popup-content h3 {
+  margin: 0 0 8px;
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+}
+
+.leaflet-popup-content {
+  font-size: 14px;
+}
+
+/* --------------------------------------------------------------------
+   Life Science footer section
+   -------------------------------------------------------------------- */
+.life-science {
+  background: linear-gradient(135deg, var(--hanze-orange) 0%, var(--hanze-orange-dark) 100%);
+  border-radius: 20px;
+  padding: 40px 40px;
+  color: #fff;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.life-science .ls-text { flex: 1 1 60%; min-width: 260px; }
+
+.life-science .eyebrow-light {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.life-science h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.life-science p {
+  margin: 0;
+  opacity: 0.96;
+  max-width: 640px;
+}
+
+.life-science .ls-badge {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  padding: 18px 22px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.life-science .ls-badge .ls-year {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+}
+
+.life-science .ls-badge .ls-year-label {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------
+   Wist je dat...? — speelse flip-cards
+   -------------------------------------------------------------------- */
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.fact-card {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  perspective: 1200px;
+  height: 190px;
+}
+
+.fact-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.fact-card.flipped .fact-card-inner {
+  transform: rotateY(180deg);
+}
+
+.fact-face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  backface-visibility: hidden;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.fact-front {
+  background: var(--card);
+  border: 1px solid var(--line);
+  justify-content: center;
+}
+
+.fact-front p {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.fact-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.fact-back {
+  background: linear-gradient(135deg, var(--hanze-orange) 0%, var(--hanze-orange-dark) 100%);
+  color: #fff;
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fact-back p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fact-card:hover .fact-card-inner {
+  transform: translateY(-2px);
+}
+
+.fact-card.flipped:hover .fact-card-inner {
+  transform: rotateY(180deg) translateY(-2px);
+}
+
+.fact-card:focus-visible .fact-card-inner {
+  outline: 2px solid var(--hanze-orange-dark);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 14px 0;
+  }
+  .page-content { margin-left: 0; }
+  .sidebar .sidebar-title, .sidebar .sidebar-footer { display: none; }
+  .sidebar nav { flex-direction: row; }
+  .sidebar nav a { border-left: none; border-bottom: 3px solid transparent; white-space: nowrap; }
+  .sidebar nav a.active { border-left-color: transparent; border-bottom-color: var(--hanze-orange); }
+  #map_and_paragraph { flex-direction: column; }
+  #paragraph_content { max-height: none; }
+  header.hero h1 { font-size: 32px; }
+  .fact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .fact-grid { grid-template-columns: repeat(2, 1fr); }
 }
