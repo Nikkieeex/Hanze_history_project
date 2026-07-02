@@ -5,14 +5,7 @@ Leaflet is een interactieve map!! Je kunt ook coordinaten zetten dat gebruiker n
 
 https://timeline.knightlab.com/
 
-Sheila: to-do/IDEAS
-- Clean up code (+ add comments)
-- Part about Frits Zernike
+TO-ADD/HAS NOT YET BEEN DONE BUT WAS IN THE PLANNING (Mostly the References section) (Ideas/Concepts)
 - References (toggle)
     Add a toggle-able reference list (chicago author-date)
     Add a navigation element to the nav-bar for the 'references' section
-- Add paragraph breaks (/more paragraph elements) 
-    to the 'text box' next to the map, to split the large amount of text per paragraph 
-    into multiple 'smaller paragraphs' 
-    (example: Van Doorenveste 'text box next to the map' 
-    when clicked on the map).
